@@ -459,6 +459,52 @@ nav {
   #strengths .down-arrow {
     background-color: #313131; }
 
+#case {
+  background-color: #313131; }
+  #case .container {
+    padding-top: 0;
+    padding-bottom: 0; }
+    #case .container .case-title {
+      font-size: 60px;
+      font-family: RobotoCondensed-Regular;
+      color: white;
+      text-transform: uppercase;
+      padding-left: 15px; }
+  #case .case-slider-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    #case .case-slider-wrapper .slide {
+      width: 270px; }
+    #case .case-slider-wrapper .case-element {
+      width: 100%;
+      height: 270px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      #case .case-slider-wrapper .case-element img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+
 #industries {
   background: -webkit-linear-gradient(45deg, #035163 0%, #035163 20%, #178096 45%, #178096 55%, #035163 80%, #035163 100%);
   background: linear-gradient(45deg, #035163 0%, #035163 20%, #178096 45%, #178096 55%, #035163 80%, #035163 100%);
