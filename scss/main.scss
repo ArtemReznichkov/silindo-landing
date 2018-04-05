@@ -354,6 +354,7 @@ nav {
         height: 115px;
         border-radius: 50%;
         margin-bottom: 20px;
+        transition: 0.3s;
       }
       svg {
         width: 80px;
@@ -488,12 +489,26 @@ nav {
     .slide {
       width: 270px;
     }
+    .title-case {
+      width: 100%;
+      height: 270px;
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
     .case-element {
       width: 100%;
       height: 270px;
       display: flex;
       align-items: center;
       position: relative;
+      cursor: pointer;
+      &:hover {
+        .cover-block {
+          background-color: rgba(67, 67, 67, 0.2);
+          color: white;
+        }
+      }
       .cover-block {
         position: absolute;
         display: flex;
@@ -505,13 +520,71 @@ nav {
         color: #b5b5b5;
         text-transform: uppercase;
         font-size: 20px;
+        transition: 0.5s;
         font-family: RobotoCondensed-Regular;
+        padding: 10px;
       }
       img {
         display: block;
         width: 100%;
         height: 100%;
         object-fit: cover;
+      }
+    }
+  }
+  .popup-wrapper {
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(67, 67, 67, 0.5);
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    .popup-block {
+      display: flex;
+      position: relative;
+      width: 95%;
+      max-width: 880px;
+      background-color: #e5e5e5;
+      padding: 28px;
+      img {
+        display: block;
+        width: 60%;
+        max-width: 490px;
+        object-fit: cover;
+      }
+      .close-popup {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        width: 28px;
+        height: 28px;
+        cursor: pointer;
+        img {
+          width: 100%;
+        }
+      }
+      .popup-info {
+        padding-left: 20px;
+        margin-top: 50px;
+        h3 {
+          font-size: 30px;
+          font-family: RobotoCondensed-Bold;
+          color: #3c3c3b;
+          margin-bottom: 20px;
+        }
+        .info-list {
+          margin-left: 20px;
+          li {
+            font-family: RobotoCondensed-Regular;
+            font-size: 18px;
+            color: #3c3c3b;
+          }
+        }
       }
     }
   }

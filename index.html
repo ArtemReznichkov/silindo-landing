@@ -251,79 +251,78 @@
         </button>
         <div class="case-slider-wrapper">
             <div class="slide">
-                <div class="case-element">
+                <div class="case-element" data-index = "1">
                     <img src="img/case%20slider/1.png" alt="">
                     <div class="cover-block">
                         Media stream monitoring
                         system
                     </div>
                 </div>
-                <div class="case-element">
+                <div class="case-element" data-index = "2">
+                    <img src="img/case%20slider/5.png" alt="">
+                    <div class="cover-block">
+                        C/C++ code
+                        completion plugin
+                        for Visual Studio
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="case-element" data-index = "3">
                     <img src="img/case%20slider/2.png" alt="">
                     <div class="cover-block">
-                        Media stream monitoring
-                        system
+                        Key to (multiple)
+                        values storage for indexing Internet
                     </div>
                 </div>
-            </div>
-            <div class="slide">
-                <div class="case-element">
-                    <img src="img/case%20slider/3.png" alt="">
-                    <div class="cover-block">
-                        Media stream monitoring
-                        system
-                    </div>
-                </div>
-                <div class="case-element">
-                    <img src="img/case%20slider/4.png" alt="">
-                    <div class="cover-block">
-                        Media stream monitoring
-                        system
-                    </div>
-                </div>
-            </div>
-            <div class="slide">
-                <div class="case-element">
-                    <!--<img src="img/case%20slider/5.png" alt="">-->
-                    <h2 class="case-title">case <span class="bold-chars">studies</span></h2>
-                </div>
-                <div class="case-element">
+                <div class="case-element" data-index = "4">
                     <img src="img/case%20slider/6.png" alt="">
                     <div class="cover-block">
-                        Media stream monitoring
-                        system
+                        Custom micro-OS
+                        for x86-64
                     </div>
                 </div>
             </div>
             <div class="slide">
-                <div class="case-element">
+                <div class="title-case">
+                    <h2 class="case-title">case <span class="bold-chars">studies</span></h2>
+                </div>
+                <div class="case-element" data-index = "5">
                     <img src="img/case%20slider/7.png" alt="">
                     <div class="cover-block">
-                        Media stream monitoring
-                        system
-                    </div>
-                </div>
-                <div class="case-element">
-                    <img src="img/case%20slider/8.png" alt="">
-                    <div class="cover-block">
-                        Media stream monitoring
-                        system
+                        QoE (Quality of Experience)
+                        analysis for
+                        video/audio streams
                     </div>
                 </div>
             </div>
             <div class="slide">
-                <div class="case-element">
+                <div class="case-element" data-index="6">
                     <img src="img/case%20slider/3.png" alt="">
                     <div class="cover-block">
-                        Media stream monitoring
-                        system
+                        Ext2 FS driver design and implementation
+                        for custom OS
                     </div>
                 </div>
-                <div class="case-element">
+                <div class="case-element" data-index="7">
+                    <img src="img/case%20slider/8.png" alt="">
+                    <div class="cover-block">
+                        SMPTE 2022-6/7
+                        Support (SDI over IP)
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="case-element" data-index="8">
                     <img src="img/case%20slider/4.png" alt="">
                     <div class="cover-block">
-                        Media stream monitoring
-                        system
+                        Online bank account opening system
+                    </div>
+                </div>
+                <div class="case-element" data-index="9">
+                    <img src="img/case%20slider/9.png" alt="">
+                    <div class="cover-block">
+                        Mobile reader for compressed rich text document bases
                     </div>
                 </div>
             </div>
@@ -331,6 +330,161 @@
         <button type="button" class="slide-next">
             <img src="img/case%20slider/Arrow_right.png" alt="">
         </button>
+    </div>
+    <!--POPUPS FOR CASES-->
+    <div class="popups">
+        <div class="popup-wrapper" data-index="1">
+            <div class="popup-block">
+                <span class="close-popup">
+                    <img class="close-icon" src="img/popup-images/close_icon.png" alt="">
+                </span>
+                <img src="img/popup-images/stream.png" alt="">
+                <div class="popup-info">
+                    <h3>Media stream monitoring system:</h3>
+                    <ul class="info-list">
+                        <li>Linux kernel module for UDP-monitoring;</li>
+                        <li>Distributed cluster of monitoring nodes (written in Golang);</li>
+                        <li>Node manager with JSON API via HTTP/SSE and websockets; </li>
+                        <li>Uses NATS for inter-node communication;</li>
+                        <li>Usesе PostgreSQL for data storage;</li>
+                        <li>Client UI as web-application written in Typescript;</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="popup-wrapper" data-index="2">
+            <div class="popup-block">
+                <span class="close-popup">
+                    <img class="close-icon" src="img/popup-images/close_icon.png" alt="">
+                </span>
+                <img src="img/popup-images/visual-studio.png" alt="">
+                <div class="popup-info">
+                    <h3>C/C++ code completion plugin for Visual Studio:</h3>
+                    <ul class="info-list">
+                        <li>Based on libclang;</li>
+                        <li>Support for POSIX-compatible projects;</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="popup-wrapper" data-index="3">
+            <div class="popup-block">
+                <span class="close-popup">
+                    <img class="close-icon" src="img/popup-images/close_icon.png" alt="">
+                </span>
+                <img src="img/popup-images/indexing.png" alt="">
+                <div class="popup-info">
+                    <h3>Key to (multiple) values storage for indexing Internet:</h3>
+                    <ul class="info-list">
+                        <li>Written in Golang;</li>
+                        <li>Capable to store billions of records;</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="popup-wrapper" data-index="4">
+            <div class="popup-block">
+                <span class="close-popup">
+                    <img class="close-icon" src="img/popup-images/close_icon.png" alt="">
+                </span>
+                <img src="img/popup-images/micro.png" alt="">
+                <div class="popup-info">
+                    <h3>Custom micro-OS for x86-64:</h3>
+                    <ul class="info-list">
+                        <li>Multiboot specification support (for GRUB2 or patched GRUB);</li>
+                        <li>Textual VGA-mode (16 colors, limited kprintf);</li>
+                        <li>CPU topology detection (sockets, cores, threads) for Intel and AMD CPUs;</li>
+                        <li>Convenient page mapping interface;</li>
+                        <li>Support of interrupts written in C;</li>
+                        <li>Simple preemptive scheduler with SMP support;</li>
+                        <li>Synchronization primitives: spinlock, mutex;</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="popup-wrapper" data-index="5">
+            <div class="popup-block">
+                <span class="close-popup">
+                    <img class="close-icon" src="img/popup-images/close_icon.png" alt="">
+                </span>
+                <img src="img/popup-images/custom-os.png" alt="">
+                <div class="popup-info">
+                    <h3>QoE (Quality of Experience)
+                        analysis for
+                        video/audio streams</h3>
+                    <ul class="info-list">
+                        <li>Tool for artifact voting and correlation analysis;</li>
+                        <li>Adapters for number of open video databases;</li>
+                        <li>Detectors for various video distortions (blocking, blurriness, etc.);</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="popup-wrapper" data-index="6">
+            <div class="popup-block">
+                <span class="close-popup">
+                    <img class="close-icon" src="img/popup-images/close_icon.png" alt="">
+                </span>
+                <img src="img/popup-images/custom-os.png" alt="">
+                <div class="popup-info">
+                    <h3>Ext2 FS driver design and implementation for custom OS:</h3>
+                    <ul class="info-list">
+                        <li>Tool for artifact voting and correlation analysis;</li>
+                        <li>Adapters for number of open video databases;</li>
+                        <li>Detectors for various video distortions (blocking, blurriness, etc.);</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="popup-wrapper" data-index="7">
+            <div class="popup-block">
+                <span class="close-popup">
+                    <img class="close-icon" src="img/popup-images/close_icon.png" alt="">
+                </span>
+                <img src="img/popup-images/smpte.png" alt="">
+                <div class="popup-info">
+                    <h3>SMPTE 2022-6/7 Support (SDI over IP):</h3>
+                    <ul class="info-list">
+                        <li>Stream detection (Linux kernel);</li>
+                        <li>Stream time delta calculation (Linux kernel);</li>
+                        <li>Combined RTP drops calculation (Linux kernel);</li>
+                        <li>SMPTE 2022-6 metadata extraction (user mode);</li>
+                        <li>SMPTE 2022-6 video/thumbnail extraction (user mode);</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="popup-wrapper" data-index="8">
+            <div class="popup-block">
+                <span class="close-popup">
+                    <img class="close-icon" src="img/popup-images/close_icon.png" alt="">
+                </span>
+                <img src="img/popup-images/online-bank.png" alt="">
+                <div class="popup-info">
+                    <h3>Online bank account opening system:</h3>
+                    <ul class="info-list">
+                        <li>In-house microservice framework;</li>
+                        <li>Backend in C#, frontend in JS/React;</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="popup-wrapper" data-index="9">
+            <div class="popup-block">
+                <span class="close-popup">
+                    <img class="close-icon" src="img/popup-images/close_icon.png" alt="">
+                </span>
+                <img src="img/popup-images/mobile.png" alt="">
+                <div class="popup-info">
+                    <h3>Mobile reader for compressed rich text document bases</h3>
+                    <ul class="info-list">
+                        <li>Cross-platform module for support of proprietary base format (C++);</li>
+                        <li>High-optimized document rendering engine (for subset of HTML);</li>
+                        <li>Application GUI (Symbian C++);</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 <section id="industries">
