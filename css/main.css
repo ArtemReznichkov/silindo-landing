@@ -368,6 +368,9 @@ nav {
         margin-bottom: 20px;
         -webkit-transition: 0.3s;
         transition: 0.3s; }
+        @media (max-width: 520px) {
+          #expertise .expertise-wrapper .expertise-element .svg-wrapper {
+            width: 100%; } }
       #expertise .expertise-wrapper .expertise-element svg {
         width: 80px; }
       #expertise .expertise-wrapper .expertise-element .svg-icon {
@@ -586,6 +589,9 @@ nav {
     z-index: 9999;
     left: 0;
     top: 0; }
+    @media (max-width: 520px) {
+      #case .popup-wrapper {
+        height: 100%; } }
     #case .popup-wrapper .popup-block {
       display: -webkit-box;
       display: -webkit-flex;
@@ -596,11 +602,24 @@ nav {
       max-width: 880px;
       background-color: #e5e5e5;
       padding: 28px; }
+      @media (max-width: 520px) {
+        #case .popup-wrapper .popup-block {
+          -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          height: 100%;
+          overflow-y: scroll;
+          padding: 20px;
+          padding-top: 65px; } }
       #case .popup-wrapper .popup-block img {
         display: block;
         width: 60%;
         max-width: 490px;
         object-fit: cover; }
+        @media (max-width: 520px) {
+          #case .popup-wrapper .popup-block img {
+            width: 100%;
+            max-height: 200px; } }
       #case .popup-wrapper .popup-block .close-popup {
         display: block;
         position: absolute;
@@ -614,6 +633,9 @@ nav {
       #case .popup-wrapper .popup-block .popup-info {
         padding-left: 20px;
         margin-top: 50px; }
+        @media (max-width: 520px) {
+          #case .popup-wrapper .popup-block .popup-info {
+            width: 100%; } }
         #case .popup-wrapper .popup-block .popup-info h3 {
           font-size: 30px;
           font-family: RobotoCondensed-Bold;

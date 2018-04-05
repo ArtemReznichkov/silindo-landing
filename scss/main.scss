@@ -355,6 +355,9 @@ nav {
         border-radius: 50%;
         margin-bottom: 20px;
         transition: 0.3s;
+        @include mobile {
+          width: 100%;
+        }
       }
       svg {
         width: 80px;
@@ -543,6 +546,9 @@ nav {
     z-index: 9999;
     left: 0;
     top: 0;
+    @include mobile {
+      height: 100%;
+    }
     .popup-block {
       display: flex;
       position: relative;
@@ -550,11 +556,22 @@ nav {
       max-width: 880px;
       background-color: #e5e5e5;
       padding: 28px;
+      @include mobile {
+        flex-wrap: wrap;
+        height: 100%;
+        overflow-y: scroll;
+        padding: 20px;
+        padding-top: 65px;
+      }
       img {
         display: block;
         width: 60%;
         max-width: 490px;
         object-fit: cover;
+        @include mobile {
+          width: 100%;
+          max-height: 200px;
+        }
       }
       .close-popup {
         display: block;
@@ -571,6 +588,9 @@ nav {
       .popup-info {
         padding-left: 20px;
         margin-top: 50px;
+        @include mobile {
+          width: 100%;
+        }
         h3 {
           font-size: 30px;
           font-family: RobotoCondensed-Bold;
