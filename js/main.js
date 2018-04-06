@@ -75,7 +75,61 @@ $(document).ready(function () {
         if (e.target.className === "popup-wrapper" || e.target.className === "close-icon") {
             $('.popup-wrapper').fadeOut();
         }
+    });
+
+
+    $("#contacts-form").on("submit", function(e) {
+        e.preventDefault();
+        var data = {};
+        $('#contacts-form').find('input, textarea').each(function() {
+            data[this.name] = $(this).val();
+        });
+        //post data fields {name, phone, email, message}
+        $.post('http://localhost:8080/', data, function() {
+            $('#contacts-form').find('input, textarea').each(function() {
+                $(this).val('');
+            });
+        }).fail(function() {
+            alert( "error" );
+        })
     })
+
+
+
+
+    $('a[href*="#"]')
+    // Remove links that don't actually link to anything
+        .not('[href="#"]')
+        .not('[href="#0"]')
+        .click(function(event) {
+            // On-page links
+            if (
+                location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                &&
+                location.hostname == this.hostname
+            ) {
+                // Figure out element to scroll to
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                // Does a scroll target exist?
+                if (target.length) {
+                    // Only prevent default if animation is actually gonna happen
+                    event.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000, function() {
+                        var $target = $(target);
+                        $target.focus();
+                        if ($target.is(":focus")) {
+                            return false;
+                        } else {
+                            $target.attr('tabindex','-1'); 
+                            $target.focus();
+                        };
+                    });
+                }
+            }
+        });
 
 
 

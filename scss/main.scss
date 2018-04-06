@@ -692,8 +692,11 @@ nav {
         width: 100%;
         border: 0;
         border-bottom: 1px solid #a0a0a0;
-        color: #9d9d9c;
+        color: #3c3c3b;
         padding: 10px 0;
+        font-family: RobotoCondensed-Regular;
+        font-size: 14px;
+        letter-spacing: 0.1em;
         &::placeholder {
           color: #9d9d9c;
           font-family: RobotoCondensed-Light;
@@ -702,8 +705,11 @@ nav {
       }
       textarea {
         width: 100%;
-        color: #9d9d9c;
-        padding: 10px 0;
+        color: #3c3c3b;
+        padding: 10px;
+        font-family: RobotoCondensed-Regular;
+        font-size: 14px;
+        letter-spacing: 0.1em;
       }
       h5 {
         font-size: 14px;
@@ -736,6 +742,9 @@ nav {
           font-family: RobotoCondensed-Bold;
           font-size: 14px;
           cursor: pointer;
+          &:hover {
+            background: linear-gradient(45deg, #178096 0%, #178096 20%, #035163 45%, #035163 55%, #178096 80%, #178096 100%);
+          }
         }
         @include mobile {
           order: 1;

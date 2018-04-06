@@ -741,8 +741,11 @@ nav {
         width: 100%;
         border: 0;
         border-bottom: 1px solid #a0a0a0;
-        color: #9d9d9c;
-        padding: 10px 0; }
+        color: #3c3c3b;
+        padding: 10px 0;
+        font-family: RobotoCondensed-Regular;
+        font-size: 14px;
+        letter-spacing: 0.1em; }
         #contacts form .input-wrapper input::-webkit-input-placeholder {
           color: #9d9d9c;
           font-family: RobotoCondensed-Light;
@@ -761,8 +764,11 @@ nav {
           font-size: 14px; }
       #contacts form .input-wrapper textarea {
         width: 100%;
-        color: #9d9d9c;
-        padding: 10px 0; }
+        color: #3c3c3b;
+        padding: 10px;
+        font-family: RobotoCondensed-Regular;
+        font-size: 14px;
+        letter-spacing: 0.1em; }
       #contacts form .input-wrapper h5 {
         font-size: 14px;
         text-transform: uppercase;
@@ -799,6 +805,9 @@ nav {
           font-family: RobotoCondensed-Bold;
           font-size: 14px;
           cursor: pointer; }
+          #contacts form .button-wrapper .button button:hover {
+            background: -webkit-linear-gradient(45deg, #178096 0%, #178096 20%, #035163 45%, #035163 55%, #178096 80%, #178096 100%);
+            background: linear-gradient(45deg, #178096 0%, #178096 20%, #035163 45%, #035163 55%, #178096 80%, #178096 100%); }
         @media (max-width: 520px) {
           #contacts form .button-wrapper .button {
             -webkit-box-ordinal-group: 2;
