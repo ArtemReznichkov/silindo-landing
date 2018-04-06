@@ -162,6 +162,8 @@ header {
   header .down-arrow {
     background: -webkit-linear-gradient(45deg, #035163 4%, #035163 5%, #178096 45%, #178096 100%, #035163 76%, #035163 82%);
     background: linear-gradient(45deg, #035163 4%, #035163 5%, #178096 45%, #178096 100%, #035163 76%, #035163 82%); }
+  header .container {
+    max-width: 100%; }
 
 .menu-icon {
   position: absolute;
@@ -203,10 +205,14 @@ nav {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    width: 100%; }
+    width: 50%;
+    min-width: 768px;
+    margin-left: auto;
+    padding-right: 70px; }
     @media (max-width: 768px) {
       nav .menu {
-        display: block; } }
+        display: block;
+        min-width: 100%; } }
     nav .menu li {
       display: inline-block; }
       @media (max-width: 768px) {
@@ -744,7 +750,7 @@ nav {
         color: #3c3c3b;
         padding: 10px 0;
         font-family: RobotoCondensed-Regular;
-        font-size: 14px;
+        font-size: 16px;
         letter-spacing: 0.1em; }
         #contacts form .input-wrapper input::-webkit-input-placeholder {
           color: #9d9d9c;
@@ -767,7 +773,7 @@ nav {
         color: #3c3c3b;
         padding: 10px;
         font-family: RobotoCondensed-Regular;
-        font-size: 14px;
+        font-size: 16px;
         letter-spacing: 0.1em; }
       #contacts form .input-wrapper h5 {
         font-size: 14px;

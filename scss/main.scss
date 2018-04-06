@@ -181,6 +181,9 @@ header {
   .down-arrow {
   background: linear-gradient(45deg, #035163 4%, #035163 5%, #178096 45%, #178096 100%, #035163 76%, #035163 82%);
   }
+  .container {
+    max-width: 100%;
+  }
 }
 .menu-icon {
   position: absolute;
@@ -212,9 +215,13 @@ nav {
   .menu {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 50%;
+    min-width: 768px;
+    margin-left: auto;
+    padding-right: 70px;
     @include tablet {
       display: block;
+      min-width: 100%;
     }
     li {
       display: inline-block;
@@ -695,7 +702,7 @@ nav {
         color: #3c3c3b;
         padding: 10px 0;
         font-family: RobotoCondensed-Regular;
-        font-size: 14px;
+        font-size: 16px;
         letter-spacing: 0.1em;
         &::placeholder {
           color: #9d9d9c;
@@ -708,7 +715,7 @@ nav {
         color: #3c3c3b;
         padding: 10px;
         font-family: RobotoCondensed-Regular;
-        font-size: 14px;
+        font-size: 16px;
         letter-spacing: 0.1em;
       }
       h5 {

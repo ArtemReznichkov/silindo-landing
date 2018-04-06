@@ -123,7 +123,7 @@ $(document).ready(function () {
                         if ($target.is(":focus")) {
                             return false;
                         } else {
-                            $target.attr('tabindex','-1'); 
+                            $target.attr('tabindex','-1');
                             $target.focus();
                         };
                     });
