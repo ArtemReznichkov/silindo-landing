@@ -743,6 +743,15 @@ nav {
         @media (max-width: 520px) {
           #contacts form .input-wrapper.phone, #contacts form .input-wrapper.mail {
             width: 100%; } }
+      #contacts form .input-wrapper.phone {
+        position: relative; }
+        #contacts form .input-wrapper.phone .plus {
+          position: absolute;
+          left: 12px;
+          bottom: 37px;
+          font-size: 14px;
+          font-family: RobotoCondensed-Light;
+          color: #9d9d9c; }
       #contacts form .input-wrapper input {
         width: 100%;
         border: 0;

@@ -77,6 +77,22 @@ $(document).ready(function () {
         }
     });
 
+    $("#phoneNumber").keydown(function (e) {
+        // Allow: backspace, delete, tab, escape, enter and .
+        if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
+            // Allow: Ctrl+A, Command+A
+            (e.keyCode === 65 && (e.ctrlKey === true || e.metaKey === true)) ||
+            // Allow: home, end, left, right, down, up
+            (e.keyCode >= 35 && e.keyCode <= 40)) {
+            // let it happen, don't do anything
+            return;
+        }
+        // Ensure that it is a number and stop the keypress
+        if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+            e.preventDefault();
+        }
+    });
+
 
     $("#contacts-form").on("submit", function(e) {
         e.preventDefault();
@@ -84,6 +100,8 @@ $(document).ready(function () {
         $('#contacts-form').find('input, textarea').each(function() {
             data[this.name] = $(this).val();
         });
+        // data.phone = '+' + data.phone;
+        data = JSON.stringify(data);
         //post data fields {name, phone, email, message}
         $.post('http://localhost:8080/', data, function() {
             $('#contacts-form').find('input, textarea').each(function() {

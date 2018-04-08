@@ -695,6 +695,17 @@ nav {
           width: 100%;
         }
       }
+      &.phone {
+        position: relative;
+        .plus {
+          position: absolute;
+          left: 12px;
+          bottom: 37px;
+          font-size: 14px;
+          font-family: RobotoCondensed-Light;
+          color: #9d9d9c;
+        }
+      }
       input {
         width: 100%;
         border: 0;
